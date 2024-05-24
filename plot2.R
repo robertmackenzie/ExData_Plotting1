@@ -13,9 +13,10 @@ png(
   pointsize = 12
 )
 with(consumption, plot(
-                       ymd_hms(paste(consumption$Date, consumption$Time)),
-                       Global_active_power,
-                       type = "l",
-                       ylab = "Global Active Power (kilowatts)",
-                       xlab = ""))
+  ymd_hms(paste(consumption$Date, consumption$Time)),
+  Global_active_power,
+  type = "l",
+  ylab = "Global Active Power (kilowatts)",
+  xlab = ""
+))
 dev.off()
